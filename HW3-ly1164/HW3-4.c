@@ -8,7 +8,7 @@ int main(){
     scanf("%d", &n);
     // print the fibonacci sequence if the number is a positive integer
     // the sequence starts from year 0
-    if ((n == 1)){
+    if (n == 1){
         printf("1 1\n");
     } else if (n >= 2) {
         int unsigned long first = 1;
