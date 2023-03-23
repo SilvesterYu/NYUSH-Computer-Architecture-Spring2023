@@ -157,6 +157,26 @@ printf("new address for target2\n");
 printf("address of target2 in hex %p\n", &target2);
 printf("address stored in target2 in hex %p\n", target2);
 
+int myvar = 38;
+int myvar2 = myvar;
+printf("address of myvar %p\n", &myvar);
+printf("address of myvar2 %p\n", &myvar2);
+
+int i = 42; // variable int
+int *p; // pointer towards an int variable
+p = &i; // the address of i is stored in p
+printf("value of i : %d\n", i); // print 42
+printf("value of i, via p : %d\n", *p); // print 42
+*p = 17; // store a value in the address of i
+ // and thus in i
+printf("value of i : %d\n", i); // print 17
+printf("value of i, via p : %d\n", *p); // print 17
+
+printf("loc stored in pointer p : %p\n", p); // print 17
+p=&myvar;
+printf("loc stored in pointer p : %p\n", p); // print 17
+
+
 /// practice end
 return 0;
 }
